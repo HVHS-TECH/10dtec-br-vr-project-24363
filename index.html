@@ -13,13 +13,34 @@
        <!-- Put this inside the <a-scene> -->
       <a-entity 
       ply-model="src:road-0.ply"
-      position="0 10 -9"
-      rotation="0 0 0"
-      ></a-entity>
+      position="0 0 0"
+      rotation="-90 0 0"
+      > </a-entity>
 
       <a-entity 
+      ply-model="src:car1.ply"
+      position="0 0 20"
+      rotation="-90 0 0"
+      > </a-entity>
 
-    pl
+      <a-entity 
+      ply-model="src:car2.ply"
+      position="1 0 -18"
+      rotation="-90 -180 0"
+     animation="
+     property: position;
+     from: 1 0 -18;
+     to: -1 0 18;
+     dur: 2000;
+     loop: true;
+     dir:normal;
+     
+     
+     
+     "
+    
+      
+     ></a-entity>
                  
     </a-scene>
   </body>
